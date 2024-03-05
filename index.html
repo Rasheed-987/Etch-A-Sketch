@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+.container{
+
+    /* border: 2px solid black;; */
+    height: auto;
+    width: auto;
+    display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(7px, 1fr));
+            /* grid-template-rows: repeat(auto-fill, minmax(100px, 1fr)); */
+            gap: 0; /* Adjust the gap between cells as needed */
+            margin: 0;
+        }
+.grid1 {
+            width: 10px;
+            height: 10px; /* Adjust the height of each cell as needed */
+            font-weight: bold;
+ 
+        }
+        h1{
+            text-align: center;
+        }
+        .button{
+            padding: 5px;
+            border-radius: 5px;
+            background-color: aqua;
+            margin-bottom: 10px;
+        }
+    </style>
+<body>
+    <h1>ETCH A SKETCH</h1>
+
+    <button class="button" onclick="popup()" >Click Me</button>
+    <div class="container">
+       
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
